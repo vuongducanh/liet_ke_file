@@ -7,26 +7,33 @@ namespace Bai_tap_file_io
 {
     class Program
     {
-        public static string tree(string args)
+        public static void tree(string args )
         {
             string[] folder=Directory.GetDirectories(args);
             string[] files=Directory.GetFiles(args);
-            for (int i = 0; i < folder.Length; i++)
-            {
-                    string[] files2=Directory.GetFiles(folder[i]);
-                    string[] folder2=Directory.GetDirectories(folder[i]);
-                    for (int j = 0; j < folder2.Length; j++)
-                    {
-                       args+="\n" + "|" + "\n" +"├── " +folder[i]+"\n"+"\t└──"+folder2[j]; 
-                    }
+
+            if(folder.Length>0){
+                for (int i = 0; i < folder.Length; i++)
+                {
+                    string extension = Path.GetFileName(folder[i]);
+                    args+="\n"+"│"  +"\n"+ "├── "+"["+extension+"]"; 
+                    tree(folder[i]);
+                }
             }
-             return args;
+            if(files.Length>0){
+                for (int i = 0; i < files.Length; i++)
+                {
+                    string extension = Path.GetFileName(files[i]);
+                    args+="\n"+ "│" +"\n"+ "├──"+extension; 
+                }
+                 System.Console.WriteLine(args); 
+            }
         }
         static void Main(string[] args)
         {
-                    
-            string kq = tree("/home/ducanh/Desktop/folder/");
-            System.Console.WriteLine(kq);
+            string input = "/home/ducanh/Desktop/folder/";
+            System.Console.WriteLine(Path.GetFileName(input));
+            tree(input);
         }
     }
 }
