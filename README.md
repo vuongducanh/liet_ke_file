@@ -5,12 +5,14 @@ Trong Linux có một ứng dụng nổi tiếng có tên là tree để liệt 
 ```
 $ tree .
 .
-├── ReadMe.md
-└── folderA
-    ├── demo.cs
-    ├── folderAA
-    │   └── file.cs
-    └── util.cs
+ ├──[folderA]
+  │    └──[folderA1]
+  │         ├──[fodlerA11]
+  │         │    └──[folder!!!]
+  │         │         └──New Text Document.txt
+  │         └──New Text Document.txt
+  ├──[folderB]
+  └──New Text Document.txt
 ```
 Hãy viết một ứng dụng bằng C# nhận vào tham số là đường dẫn thư mục sau đó liệt kê toàn bộ nội dung thư mục đó.
 Chú ý nếu tham số là
