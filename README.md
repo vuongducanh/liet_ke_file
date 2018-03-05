@@ -20,5 +20,6 @@ Chú ý nếu tham số là
 - .. liệt kê thư mục cha
 - ~ liệt kê thư mục người dùng 
 # Solution:
+[![](https://www.youtube.com/watch?v=fO-ZP0ie1c8)](http://macdown.uranusjr.com/download/latest/) 
 
 
