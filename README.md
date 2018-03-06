@@ -19,11 +19,17 @@ Chú ý nếu tham số là
 - . liệt kê thư mục hiện thời
 - .. liệt kê thư mục cha
 - ~ liệt kê thư mục người dùng 
-# Solution:
+# Solution:  tham số truyền vào là đường dẫn của folder và khoảng cách để vẽ;
+
 ## Bước một chúng ta phải lấy folder và file trong thư muc cha lơn nhất ta dùng câu lệnh:
 ```
 Directory.GetDirectories(<tham số truyền vào>)
- Directory.GetFiles(<tham số truyền vào>)
+Directory.GetFiles(<tham số truyền vào>)
+```
+##  sau đó chúng ta phải kiểm tra trong folder cha đó có chứa file hay folder không nếu có thì chạy vòng lặp duyệt qua các phần tử ở trong 
+### chúng ta dùng lệnh này để loại bỏ đi các phần không cần thiết mà chỉ lấy tên và thư mục hiện thời
+```
+ Path.GetFileName
 ```
 
 
