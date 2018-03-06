@@ -35,5 +35,6 @@ Directory.GetFiles(<tham số truyền vào>)
 ```
 tree();
 ```
+## Đến phần Vẽ thì mỗi lần mà tìm đến thư mục con thì sẽ cách lề một khoảng cách 
 
 
