@@ -31,6 +31,9 @@ Directory.GetFiles(<tham số truyền vào>)
 ```
  Path.GetFileName
 ```
-## Đối với bài này thì chúng ta nên dùng đệ quy gọi lại chính cái hàn function cảu mình để liệt kê tất cả các file và folder
+### Đối với bài này thì chúng ta nên dùng đệ quy gọi lại chính cái hàn function cảu mình để liệt kê tất cả các file và folder
+```
+tree();
+```
 
 
