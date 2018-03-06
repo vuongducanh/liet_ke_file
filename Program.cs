@@ -12,20 +12,20 @@ namespace directory
            string[] files = Directory.GetFiles(args);
            if (path.Length>0){
                for (int x = 0; x< path.Length; x++){                    
-                   string current_dir = Path.GetFileName(path[x]);
+                   string getfile = Path.GetFileName(path[x]);
                    if (x==path.Length-1){                        
                        if (files.Length>0){
-                           System.Console.WriteLine(padding+"  ├──"+"["+current_dir+"]");                            
-                           tree(args+"//"+current_dir,padding+"  │  ");
+                           System.Console.WriteLine(padding+"  ├──"+"["+getfile+"]");                            
+                           tree(args+"//"+getfile,padding+"  │  ");
                        }
                        else{
-                           System.Console.WriteLine(padding+"  └──"+"["+current_dir+"]");                            
-                           tree(args+"//"+current_dir,padding+"     ");
+                           System.Console.WriteLine(padding+"  └──"+"["+getfile+"]");                            
+                           tree(args+"//"+getfile,padding+"     ");
                        }
                    }
                    else{
-                       System.Console.WriteLine(padding+"  ├──"+"["+current_dir+"]");                      
-                       tree(args+"//"+current_dir,padding+"  │  ");
+                       System.Console.WriteLine(padding+"  ├──"+"["+getfile+"]");                      
+                       tree(args+"//"+getfile,padding+"  │  ");
                    }                    
                }
            }
@@ -41,7 +41,7 @@ namespace directory
        }
         static void Main(string[] args)        
        {                    
-           System.Console.WriteLine("ban  nhap vao duong dan  : ");
+           System.Console.Write("ban  nhap vao duong dan input =  : ");
            string input = Convert.ToString(Console.ReadLine());
             // @"C:\Users\DucAnh\Desktop\testree";
            System.Console.WriteLine(Path.GetFileName(input));

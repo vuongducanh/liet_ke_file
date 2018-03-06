@@ -26,10 +26,11 @@ Chú ý nếu tham số là
 Directory.GetDirectories(<tham số truyền vào>)
 Directory.GetFiles(<tham số truyền vào>)
 ```
-##  sau đó chúng ta phải kiểm tra trong folder cha đó có chứa file hay folder không nếu có thì chạy vòng lặp duyệt qua các phần tử ở trong 
-### chúng ta dùng lệnh này để loại bỏ đi các phần không cần thiết mà chỉ lấy tên và thư mục hiện thời
+##  Sau đó chúng ta phải kiểm tra trong folder cha đó có chứa file hay folder không nếu có thì chạy vòng lặp duyệt qua các phần tử ở trong 
+### Chúng ta dùng lệnh này để loại bỏ đi các phần không cần thiết mà chỉ lấy tên và thư mục hiện thời
 ```
  Path.GetFileName
 ```
+## Đối với bài này thì chúng ta nên dùng đệ quy gọi lại chính cái hàn function cảu mình để liệt kê tất cả các file và folder
 
 
